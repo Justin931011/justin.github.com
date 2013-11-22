@@ -1,0 +1,113 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.4//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<display-name>Archetype Created Web Application</display-name>
+
+
+	<servlet>
+		<servlet-name>TheUserServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddUserService</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ValidationuserNameService</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SelectCountryServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>PassWordServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>secondPassWordServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>userAgeServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>userCountyServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ValidationServlet</servlet-name>
+		<servlet-class>com.web.servlet.service.TheUserServlet</servlet-class>
+	</servlet>
+		
+	<!-- 验证码servlet -->
+	<servlet>
+	    <servlet-name>ImageServlet</servlet-name>
+	    <servlet-class>com.web.servlet.service.ImageServlet</servlet-class>
+	 </servlet>
+	
+	 <servlet-mapping>
+	    <servlet-name>ImageServlet</servlet-name>
+	    <url-pattern>/imageServlet</url-pattern>
+	 </servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>TheUserServlet</servlet-name>
+		<url-pattern>/Login.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddUserService</servlet-name>
+		<url-pattern>/AddUser.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ValidationuserNameService</servlet-name>
+		<url-pattern>/ValidationuserName.action</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SelectCountryServlet</servlet-name>
+		<url-pattern>/SelectCountry.action</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PassWordServlet</servlet-name>
+		<url-pattern>/ValidationUserPassWord.action</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>secondPassWordServlet</servlet-name>
+		<url-pattern>/ValidationSecondPassWord.action</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>userAgeServlet</servlet-name>
+		<url-pattern>/ValidationAge.action</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>userCountyServlet</servlet-name>
+		<url-pattern>/countryServlet.action</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ValidationServlet</servlet-name>
+		<url-pattern>/ValidaValidation.action</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
+
